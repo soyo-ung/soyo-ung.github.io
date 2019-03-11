@@ -12,7 +12,7 @@ email:
 description:  Bakha studying blog
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bakhamour.github.io" # the base hostname & protocol for your site
+url: "http://bakhamour.github.io/" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  
 
