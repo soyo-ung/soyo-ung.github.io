@@ -8,7 +8,8 @@ layout: default
     <p class="description">{{ site.description }}</p>
     <a href="about" class="btn">Read More</a>
   </div>
- 
+
+<div class="categories"> 
   <ul>
      {% assign pages_list = site.pages %}
      {% for node in pages_list %}
@@ -20,6 +21,7 @@ layout: default
        {% endif %}
      {% endfor %}
  </ul>
+</div>
  
   <div class="posts card">
       <div class="card-content white-text">
