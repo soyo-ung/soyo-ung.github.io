@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
-<header class="site-category">
+<div class="home">
+ <div class="top card">
+    <a class="email" href="mailto:{{site.email}}">{{site.email}}</a>
+    <p class="description">{{ site.description }}</p>
+    <a href="about" class="btn">Read More</a>
+  </div>
+ 
+  <header class="site-category">
   <ul>
     
     {% assign pages_list = site.pages %}
@@ -16,13 +23,7 @@ layout: default
     
 </ul>
 </header> 
-<div class="home">
- <div class="top card">
-    <a class="email" href="mailto:{{site.email}}">{{site.email}}</a>
-    <p class="description">{{ site.description }}</p>
-    <a href="about" class="btn">Read More</a>
-  </div>
- 
+  
   <div class="posts card">
       <div class="card-content white-text">
       <span class="card-title">Posts</span>
