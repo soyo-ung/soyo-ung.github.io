@@ -1,4 +1,4 @@
 ---
 layout: category
-title: git.hub
+title: github blog
 ---
