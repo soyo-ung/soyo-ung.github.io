@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
-
+<header class="site-category">
+  <ul>
+    
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "category" %}
+          <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+          href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    
+</ul>
+</header> 
 <div class="home">
  <div class="top card">
     <a class="email" href="mailto:{{site.email}}">{{site.email}}</a>
@@ -12,18 +26,6 @@ layout: default
   <div class="posts card">
       <div class="card-content white-text">
       <span class="card-title">Posts</span>
-
-         <ul>
-     {% assign pages_list = site.pages %}
-     {% for node in pages_list %}
-       {% if node.title != null %}
-         {% if node.layout == "category" %}
-           <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-           href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-         {% endif %}
-       {% endif %}
-     {% endfor %}
- </ul>
        
       <ul class="post-list">
         {% for post in site.posts %}
