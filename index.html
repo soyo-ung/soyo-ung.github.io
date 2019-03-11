@@ -8,11 +8,12 @@ layout: default
     <p class="description">{{ site.description }}</p>
     <a href="about" class="btn">Read More</a>
   </div>
+ 
+  <div class="posts card">
+      <div class="card-content white-text">
+      <span class="card-title">Posts</span>
 
-<div class="categories"> 
- <div class="card-content white-text">
-      <span class="card-title">Category</span>
-  <ul>
+         <ul>
      {% assign pages_list = site.pages %}
      {% for node in pages_list %}
        {% if node.title != null %}
@@ -23,13 +24,7 @@ layout: default
        {% endif %}
      {% endfor %}
  </ul>
- </div>
-</div>
- 
-  <div class="posts card">
-      <div class="card-content white-text">
-      <span class="card-title">Posts</span>
-
+       
       <ul class="post-list">
         {% for post in site.posts %}
           <li>
