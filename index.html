@@ -10,6 +10,8 @@ layout: default
   </div>
 
 <div class="categories"> 
+ <div class="card-content white-text">
+      <span class="card-title">Category</span>
   <ul>
      {% assign pages_list = site.pages %}
      {% for node in pages_list %}
@@ -21,6 +23,7 @@ layout: default
        {% endif %}
      {% endfor %}
  </ul>
+ </div>
 </div>
  
   <div class="posts card">
