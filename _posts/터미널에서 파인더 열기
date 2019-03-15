@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "터미널에서 파인더 열기"
+date:   2019-03-15 18:00:00 +0300
+categories: macos
+tag : [macos,terminal]
+---
+
+터미널 현재 위치의 파인더 오픈
+open .
