@@ -1,0 +1,34 @@
+---
+layout : post
+title: node 설치 및 업그레이드
+categories : [Node.js]
+
+---
+
+
+
+예전에 노드를 설치했다가 지금 다시 사용하려니 버전 문제가 생겼다.
+최신 버전을 추가 설치했는데, 버전을 변경해도 그게 반영이 안 되는 문제를 만나게 되었다. 그래서 다 지우고 다시 설치하기로 결정.
+
+하지만 그것도 커맨드만으로는 제대로 되지 않았다는...  일일이 찾아 삭제를 해 주었다.
+
+1. /usr/local/lib 에 있는 node, node_modules 삭제
+2. brew 로 설치했던 걸 지도 모르니깐, brew  uninstall node
+3. ~/local, ~/lib/  ~/include 에 있는  node 및 node_modules 삭제
+4.  /usr/local/bin 에서 node 관련 실행파일들 모두 삭제
+
+그러고 나서, .bash_profile 에 있는 기존 노드 관련 path를 지웠다.
+
+
+이제 다 삭제가 되었으니,
+
+다시 nvm 으로 최신 버전을 재설치했다. 
+>nvm install node
+
+
+재설치 후 다시 path 를 추가했다.
+
+
+
+-----------------
+n 뭔가를 사용했다가 엄청 꼬였는데, 어쩌다 그랬는지 기억이 안 난다. 다시 곰곰이 생각해 보고 정리하기로.
