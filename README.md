@@ -1,1 +1,1 @@
-Spark's Blog
+My Blog
